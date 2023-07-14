@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The India - Places Via Single city</title>
+      <link rel="stylesheet" href="output.css">
+   </head>
+   <body class="min-h-screen flex flex-col text-base">
+      <header class="sm:py-6 py-4 relative top-0 left-0 right-0 z-10">
+         <div class="container flex flex-wrap items-center justify-between">
+            <div>
+              <a href="#">
+              <img src="images/site-logo.png" alt="site-logo" width="86" height="50"/>
+              </a>
+            </div>
+            <div class="flex items-center lg:order-2">
+               <a href="#" class="font-bold sm:text-base text-sm text-black hover:text-orange ">Sign in</a>
+               <a href="#" class="sm:ms-5 ms-2 primary-btn">Add Place</a>
+               <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                  <svg class="hidden w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+               </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden mobile-menu" id="mobile-menu-2">
+               <nav>
+                  <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 absolute top-[30px] right-[30px]" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                     <span class="sr-only">Open main menu</span>
+                     <svg class="w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                     <svg class="hidden w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+                  <ul class="flex lg:items-center item-start flex-wrap lg:flex-row flex-col ">
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Home</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Cities</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Tour</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Blog</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">About Us</a></li>
+                  </ul>
+               </nav>
+            </div>
+            
+         </div>
+      </header>
+      <div class="flex-grow">
+         <section class="bg-[url(images/places-via-city-banner.png)] md:min-h-[500px] min-h-screen md:max-h-screen max-h-max bg-no-repeat bg-center bg-cover flex items-center justify-center">
+            <div class="text-center max-w-[650px] mx-auto px-4 w-full">
+               <h1 class="lg:text-[48px] sm:text-4xl text-3xl lg:leading-[60px] text-white font-bold my-2 mt-0 font-museo">Privacy Policy</h1>
+               <p class="text-white xl:text-lg text-base font-museo">Looking for something useful to read about travelling in India?</p>
+               <div class="my-3">
+                  <ul class="flex items-center justify-center">
+                     <li class="px-6 relative after:absolute after:content-['>'] after:left-[95%] text-2xl text-white"><a href="#" class="text-2xl text-white">Home</a></li>
+                     <li class="px-6 text-2xl text-white">Business</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-white">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">Privacy Policy of the india</h2>
+                  <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">TheIndia.co.in Terms & Condition to Use Website</p>
+               </div>
+               <div class="grid grid-cols-12 gap-4 md:my-16 my-8">
+                  <div class="lg:col-span-12 col-span-12 grid lg:gap-[60px] gap-6">
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">Privacy Policy</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">Please refer to TheIndia’s privacy policy to learn more about how TheIndia.co.in collects, uses and discloses personally identifiable information from its users.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">Ownership and Copyright</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">TheIndia.co.in is an online travel social community portals where users can share their photographs, travelogues and recommendations for places, hotels or any other travel related information. This website is owned and operated by OLBUZ Consulting and does not associalted with any department of government of India.We strongly believe in providing useful information and take customer trust very seriously. Our priority is to ensure the security and confidentiality of the personal information you provide/share with us. Before you submit your personal information on website, please read our terms of services policy carefully to get better understanding of our privacy practices.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">What information we collect from you</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6 mb-4">In General.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6 mb-4">We receive and store any information you enter on our Web site or give us in any other way. This includes information that can identify you ("personal information"), including your first and last name, and e-mail addresses, user name and password. You can also share information about your travel photographs, travel stories or travel plan. You can choose not to provide information to us, but in general some information about you is required in order for you to enjoy the benefits of being a registered member. For example, only registered members are able to add places, photographs or travelogues. To participate in comments or to give reply, it is require for you to become a member at TheIndia.co.in.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">Automatic Collection of Information.</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">We automatically collect some information about your computer when you visit TheIndia. For example, we will collect session data, including your IP address, Web browser software, and referring Web site. We also may collect information about your online activity, such as content viewed and pages visited. One of our goals in collecting this automatic information is to help us understand the interests of our users and customize your user experience.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">Cookies and Other Web Technologies.</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Cookies are small data text files and can be stored on your computer’s hard drive (if your Web browser permits). TheIndia.co.in and its affiliated websites use cookies for the following general purposes:</p>
+                        <ul class="list-disc ps-4">
+                           <li class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">To help us recognize your browser as a previous visitor and save and remember any preferences that may have been set while your browser was visiting our site. For example, if you register on our site, we may use cookies to remember your registration information, so you do not need to log into our site each time you visit. We also may record your password in a cookie, if you checked the box entitled "Keep me signed in on this computer unless I sign out.” Please note that member IDs, passwords, and any other account-related data included in such cookies are encrypted for security purposes.</li>
+                           <li class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">To help us customize the content, website experience, and advertisements provided to you on our websites and on other websites across the Internet. For example, when you access a web page, a cookie is automatically set by us, our service providers, or our partners to recognize your browser as you navigate on the Internet and to present you with information and advertising based on your apparent interests.</li>
+                           <li class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">To help measure and research the effectiveness of website features and offerings, advertisements, and e-mail communications (by determining which e-mails you open and act upon).</li>
+                        </ul>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">The Help portion of the toolbar on most browsers should tell you how to prevent your browser from accepting new cookies, how to have the browser notify you when you receive a new cookie, or how to disable non-essential types of cookies. Please note that if you refuse to accept cookies, you may not be able to access many of the features of our website.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Web Beacons/Web Bugs (Clear GIFs/ Single-Pixel GIFs). A web beacon allows the party that set the web beacon to monitor and collect certain limited information about the movements of online Web users. No personally identifying information is collected through web beacons or web bugs. Advertisers on the TheIndia.co.in may elect to use third party advertising companies to serve ads on the TheIndia.co.in, and they may use such web beacons to recognize your computer each time they send you an advertisement, in order to measure the effectiveness of their ads and to personalize advertising content. In this way, they may compile information about where individuals using your computer or browser saw their advertisements and determine which advertisements are clicked. Advertisers may also place a web beacon to allow them to recognize an existing cookie on your browser if from the same service. We do not control web beacons used by such third parties.</p>
+                     </div>
+                     <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">How is the Information Collected Used, and How Can I Opt Out?</h3>
+                     <div>
+                        <h3 class="text-2xl font-bold text-[#2a2a2a] mb-5">A. Personally Identifying Information.</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Authorized Purposes and Special Offers or to share Latest Updats. Personally identifying information that you voluntarily submit may be used for the purposes authorized when it was submitted. For example, if you submit email address to request services or content, such as a newsletter, the information that you submit may be used to fulfill your request. You may pick and choose which email newsletters you wish to receive (including not to receive any email newsletters) by clicking the “Change Newsletter Preferences” button included on the bottom of every email newsletter you receive from us. In addition, we, our advertisers, or third parties selected by us may send you special offers and information. If you do not wish to receive such special offers and information sent by email, you may follow the instructions for unsubscribing included within any of such special offers or informational emails.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Images and Travel stories you publish on website. Images and travel stories you submit on website can be used and shared with our social media profiles or with our affiliated websites.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Administrative Purposes. We may use this information to contact you for internal administrative purposes such as site administration, troubleshooting, or processing of e-commerce transactions, or relating to your use of the TheIndia or content you post on the TheIndia, or in our discretion to notify you of major changes to the TheIndia or this Privacy Policy.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Sweepstakes, Contests and Promotions. If you win a sweepstakes or contest, your information may be disclosed on a winners list as required by law. In addition, by entering a contest or sweepstakes on the TheIndia, you consent to the use of your personal information by us and our service providers providing services in connection with such sweepstakes or contest for purposes of prize fulfillment and/or for marketing, such as to notify you of a product or promotion that may be of interest to you. If you no longer wish to receive emails about products or promotions that may be of interest to you, you can always opt out of receiving further information by clicking on the “unsubscribe” link included in such emails. Please note that, if you provide your PII in order to enter one of our sweepstakes, contests or online offers, you may still receive information about the specific sweepstakes, contest or online offer you entered in order for us to fulfill your request or conduct such contest, but you will not receive such other emails about products or promotions if you opt to “unsubscribe.”</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">B. Non-Personally Identifying Information</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Facilitating Use of the TheIndia and Customizing Content, Advertising and Offers. We may use information collected from cookies and other tracking technology to recognize your browser when you visit the TheIndia and to attempt to personalize the TheIndia for each user, to sequence ads and offers in a series and to track page usage and paths. We may also use collected information to allow editorial content and/or advertising on the TheIndia to be targeted to groups of users for whom it is most pertinent. This means that users see editorial content and/or advertising most likely to interest them. In connection with these uses, we may disclose information to third parties.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Third Party Advertisements. We also use third party companies to serve advertisements on the TheIndia website. These companies may use cookies and other tracking information to collect information about your visits to the TheIndia and other websites, so that they can measure the effectiveness of ads, to track page usage and paths followed during visits, and to provide advertisements about goods and services they think will be of interest to you based on your usage. These companies may provide this data to us.TheIndia is also participating in various affiliate programs, write products or brand reviews. In return we get monetize to run the operations of this website. Here we would like to inform our readers that the paid reviews are written by following strict policy where our writers manually review product/brand or services. Here we do not entertain any paid linking services that violate search engine guidelines. Such links will be always “NoFollow”.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">Statistical Analysis. We may use collected information to create aggregate statistics about activity on and visitors to the TheIndia, including the number of return visits to the TheIndia or our advertisers’ websites, the number of unique visitors that have viewed or “clicked” a particular ad or visited a particular web page and how much time is spent on each page of the TheIndia. We may also create aggregate demographic statistics. We may use these aggregate statistics to measure interest in various areas of the TheIndia, to better design the TheIndia and to improve our marketing strategy and product offerings. We may share the aggregate statistical information with third parties. We also use third parties to assist us with collecting and using these aggregate statistics.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">Disclosures Required by Law.</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">As described above, certain uses of collected information may involve disclosure to third parties. In addition, we may disclose collected information in the good faith belief that we are required to do so by law, or when doing so is reasonably necessary to: (1) comply with the law or legal process; (2) respond to any claims; (3) protect and defend the rights, property or personal safety of TheIndia and its subsidiaries and affiliates, as well as our customers, users or the public; or (4) protect against misuse or unauthorized use of the TheIndia. In addition, collected information may be disclosed as part of any bankruptcy, merger, sale, transfer of company assets or acquisition.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">III. Third Party Sites and Content</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">During your visit to the TheIndia you may view as part of a frame that includes our content, certain content and websites that are actually created, operated, owned and/or hosted by a third party or third parties. You may also see links on the TheIndia to other websites. We are not responsible for the privacy practices or the content of third parties. You should check the applicable privacy policies of those third parties when providing personally identifying information. In addition, certain sections of the TheIndia may have their own, specialized privacy policies, for example because they are part of a social network or hosted by a third party. You should check the applicable privacy policies of those sections and/or of such social networks.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">IV. Is My Information Protected?</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">We use reasonable administrative, technical, personnel and physical measures to safeguard personally identifying information against loss, theft and unauthorized use, disclosure or modification. As effective as our security measures are, no security system is impenetrable. Moreover, we cannot guarantee that information that you supply will not be intercepted while being transmitted to us. Personally identifying information may also be stored on computers of third parties that provide technical support for the operation of the TheIndia or who otherwise have access to your personal information as disclosed in this Privacy Policy. We do not control the security measures used by such third parties.</p>
+                     </div>
+                     <div>
+                        <h3 class="md:text-2xl text-xl font-bold text-[#2a2a2a] mb-5">Questions.</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6  mb-4">If you have any more questions, please email us at contact@TheIndia.co.in</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <footer class="bg-black lg:py-[60px] py-[30px] pt-[50px]">
+         <div class="lg:custom-container container">
+            <div class="grid grid-cols-12 gap-4">
+               <div class="lg:col-span-7 col-span-12 lg:text-left text-center">
+                  <h3 class="font-museo font-bold lg:text-4xl text-3xl text-white mb-3">Sign Up for out news letter</h3>
+                  <p class="font-museo text-base text-white font-normal max-w-[600px] lg:ms-0 mx-auto">Stay up to date with the news letter and announcement for the upcoming events and information</p>
+               </div>
+               <div class="lg:col-span-5 col-span-12">
+                  <div class="flex lg:justify-end justify-center">
+                     <input type="email" class="w-full max-w-[280px] me-3 px-6 rounded-full" placeholder="Enter your email">
+                     <button type="submit" class="text-lg text-white bg-[#D93131] rounded-full py-2 px-4">Subscribe</button>
+                  </div>
+               </div>
+            </div>
+            <div class="grid grid-cols-12 gap-4 my-16">
+               <div class="lg:col-span-6 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <p class="text-base text-white max-w-[300px]">Stay up to date with the news letter and announcement for the upcoming  events and information</p>
+               </div>
+               <div class="lg:col-span-2 sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Business</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Career</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">DMCA</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Terms Of Use</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Privacy Policy</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Help </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3 sm:text-right">Contact Us</h4>
+                  <p class="text-base text-white font-normal sm:text-right"><a href="#">+91 00000000000</a></p>
+                  <ul class="flex items-center sm:justify-end justify-start mt-5">
+                     <li class="px-1"><a href="#"><img src="images/Facebook.png" alt="facebook"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Twitter.png" alt="twitter"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Pinterest.png" alt="Pintrest"></a></li>
+                     <li class="px-1 pe-0"><a href="#"><img src="images/Instagram.png" alt="instagram"></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div>
+               <p class="font-museo text-center text-white md:text-base text-sm font-normal">The India ©2023. | Proudly made with in India</p>
+            </div>
+         </div>
+      </footer>
+      <script src="jquery.min.js"></script>
+      <script src="owl.carousel.min.js"></script>
+      <script>
+         $(document).ready(function(){
+            $('button#mobile-menu-btn').click(function(){
+               $('body').find('.mobile-menu').toggleClass('hidden');
+            });
+         });
+         const accordionHeaders = document.querySelectorAll('.accordion-header');
+         accordionHeaders.forEach(header => {
+         header.addEventListener('click', () => {
+            // Toggle the hidden class on the accordion content
+            const content = header.nextElementSibling;
+            header.classList.toggle('active');
+            content.classList.toggle('hidden');
+         });
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,834 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The India - Places Via Single city</title>
+      <link rel="stylesheet" href="output.css">
+   </head>
+   <body class="min-h-screen flex flex-col text-base">
+      <header class="sm:py-6 py-4 relative top-0 left-0 right-0 z-10">
+         <div class="container flex flex-wrap items-center justify-between">
+            <div>
+              <a href="#">
+              <img src="images/site-logo.png" alt="site-logo" width="86" height="50"/>
+              </a>
+            </div>
+            <div class="flex items-center lg:order-2">
+               <a href="#" class="font-bold sm:text-base text-sm text-black hover:text-orange ">Sign in</a>
+               <a href="#" class="sm:ms-5 ms-2 primary-btn">Add Place</a>
+               <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                  <svg class="hidden w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+               </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden mobile-menu" id="mobile-menu-2">
+               <nav>
+                  <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 absolute top-[30px] right-[30px]" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                     <span class="sr-only">Open main menu</span>
+                     <svg class="w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                     <svg class="hidden w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+                  <ul class="flex lg:items-center item-start flex-wrap lg:flex-row flex-col ">
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Home</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Cities</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Tour</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Blog</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">About Us</a></li>
+                  </ul>
+               </nav>
+            </div>
+            
+         </div>
+      </header>
+      <div class="flex-grow">
+         <section class="bg-[url(images/ahmedabad-main-image.png)] md:min-h-[500px] min-h-screen md:max-h-screen max-h-max bg-no-repeat bg-center bg-cover flex items-center justify-center">
+            <div class="text-center max-w-[650px] mx-auto px-4 w-full">
+               <h1 class="lg:text-[48px] sm:text-4xl text-3xl lg:leading-[60px] text-white font-bold my-2 mt-0 font-museo">Activity In Ahmedabad</h1>
+               <p class="text-white xl:text-lg text-base font-museo">Here we have found top destinations for you</p>
+               <div class="my-3">
+                  <ul class="flex items-center justify-center">
+                     <li class="px-6 relative after:absolute after:content-['>'] after:left-[95%] text-2xl text-white"><a href="#" class="text-2xl text-white">Home</a></li>
+                     <li class="px-6 text-2xl text-white">Cities</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-[#f5f5f5]">
+            <div class="lg:custom-container container">
+               <div class="text-left border-b border-[#c6c6c6] border-solid border-1 pb-4">
+                  <h2 class="lg:text-4xl text-3xl font-semibold lg:leading-[50px] text-black lg:mb-3.5 mb-2 font-montserrat">Heritage Walk Ahmedabad, Walk with Ahmedabad</h2>
+                  <div class="flex justify-between items-center flex-wrap">
+                     <p class="text-base font-medium text-[#535353]">Published: 12 Jan, 2023</p>
+                     <ul class="flex items-center justify-end">
+                        <li class="mx-10">
+                           <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/Heart.png" class="h-[25px] w-[25px] me-3">Save</a>
+                        </li>
+                        <li>
+                           <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/Share.png" class="h-[25px] w-[25px] me-3">Share</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="py-16">
+                  <div class="flex flex-wrap mb-16">
+                     <div class="md:w-8/12 w-full mb-5">
+                        <div class="pe-5">
+                           <div class="mb-8">
+                              <div class="relative pt-[65%] rounded-[20px] overflow-hidden">
+                                 <img src="images/ahmedabad.png" class="absolute top-0 left-0 w-full h-full object-cover" alt="ahmedabad">
+                              </div>
+                              <h3 class="mt-8 mb-5 text-xl font-bold text-[#2a2a2a]">Explore Similar Things to Do </h3>
+                              <p class="text-base text-[#525252] font-normal mb-2">Welcome to Heritage Walk Ahmedabad with support by Ahmedabad Municipal Corporation (A.M.C.). Here you may find routes, also Akshar Travels encourage you to visit at Ahmedabad.</p>
+                              <p class="text-base text-[#525252] font-normal mb-2">The heritage walk organized by AMC with the Akshar Travels Pvt.Ltd as the project advisor. You will have the opportunity to enjoy heritage walk of Ahmedabad and its starting from the 19th century Swaminarayan Temple Kalupur, numerous Pols, </p>
+                              <p class="text-base text-[#525252] font-normal mb-2">Chowks with very popular and famous 15th century Jama Masjid, Ahmedabad heritage walk also known as the journey of ‘Mandir to Masjid.</p>
+                              <h3 class="mt-8 mb-5 text-xl font-bold text-[#2a2a2a]">List of the Top 10 Honeymoon Destinations in Bhutan</h3>
+                              <ul class="list-disc text-[#525252] text-base ps-5 mb-8">
+                                 <li>Paro</li>
+                                 <li>Thimphu</li>
+                                 <li>Trongsa Village</li>
+                                 <li>Punakha</li>
+                                 <li>Bumthang</li>
+                                 <li>Haa Valley</li>
+                                 <li>Gangtey (Phobjikha)</li>
+                                 <li>Phuentsholing</li>
+                                 <li>Wangdue Phodrang</li>
+                                 <li>Lhuntse and Mongar</li>
+                              </ul>
+                              <div class="relative pt-[65%] rounded-[20px] overflow-hidden">
+                                 <img src="images/ahmedabad.png" class="absolute top-0 left-0 w-full h-full object-cover" alt="ahmedabad">
+                              </div>
+                              <h3 class="mt-8 mb-5 text-xl font-bold text-[#2a2a2a]">Explore Similar Things to Do </h3>
+                              <p class="text-base text-[#525252] font-normal mb-2">If you are planning your Honeymoon destination to Bhutan, we assure you that you are on right track. Bhutan, a nation in the lap of the Himalayas, is a popular and great choice for honeymoon vacations since it promotes a relaxing and romantic atmosphere. Visitors who fancy a nice and clean atmosphere, mountain ranges, rivers, diverse flora and fauna, tourist attractions, and a host of other objects and wonders can quench their lust for vacations.</p>
+                              <p class="text-base text-[#525252] font-normal mb-2">Bhutan is very famous for its lush valleys and snow-covered mountains. With a warm cup of tea in the morning, the day ends with flickering lights on the mountain slopes and those oh-so-warm cottages!! you can lose yourself in the foggy mountains while listening to the chirpings of birds with your lover. We will cover every popular destination in Bhutan in the below article</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="md:w-4/12 w-full mb-5">
+                        <div class="border border-solid border-[#c6c6c6] p-5 pt-9 rounded-[10px] bg-[#FEFEFE] bg-opacity-75 mb-5 relative">
+                           <div class="batch text-base font-bold text-white capitalize bg-orange rounded-se-[10px] rounded-es-[10px] px-5 py-2 absolute top-0 right-0">On sale</div>
+                           <div>
+                              <h3 class="text-2xl font-bold text-[#434343] mb-2">4 Days - 3 Night</h3>
+                              <div class="flex justify-between flex-wrap">
+                                 <p class="text-xs text-[#434343] font-normal mb-0">Mount Kinabalu , Malaysia</p>
+                                 <div class="star">
+                                    <p class="flex items-center text-xs text-normal">
+                                       <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                       </path></svg>
+                                       <span class="font-bold me-1">5.0</span> 75 Reviews
+                                    </p>
+                                 </div>
+                              </div>                              
+                           </div>
+                           <div class="py-3 border-b border-solid border-[#c6c6c6]">
+                              <p class="text-orange text-xs">From</p>
+                              <p class="text-2xl font-bold text-[#434343]">$634.00<span class="font-normal text-xs ms-1">INR</span></p>
+                              <p class="text-orange text-xs">Lowest Price Guarantee</p>
+                           </div>
+                           <div class="py-3 border-b border-solid border-[#c6c6c6]">
+                              <p class="text-orange text-xs mb-2">Date</p>
+                              <div class="flex items-center">
+                                 <div>
+                                    <img src="images/Calendar Plus.png" alt="Calendar plus" class="h-[20px] w-[20px]" />
+                                 </div>
+                                 <input type="text" class="w-full ps-2 outline-none border-none" placeholder="May 12 / 2023">
+                              </div>
+                           </div>
+                           <div class="mt-12">
+                              <button class="text-white bg-orange w-full rounded-[10px] h-[40px] text-base font-normal">Book Now</button>
+                           </div>
+                        </div>
+                        <div class="border border-solid border-[#c6c6c6] p-5 rounded-[10px] bg-[#FEFEFE] bg-opacity-75 mb-5 relative">
+                           <h4 class="text-xl font-medium text-[#525252]">Date & Time</h4>
+                           <div class="flex items-start pt-3">
+                              <div class="w-[35px] flex" style="flex: 0 0 35px">
+                                 <img src="images/Clock.png" width="24px" height="24px">
+                              </div>
+                              <div>
+                                 <p class="text-sm text-[#2a2a2a] mb-3 font-normal">Fri Dec 29 2023 at 7:00 pm to Jan 2 <br>2024 7:45 pm</p>
+                                 <p class="text-sm text-[#2a2a2a] font-light">(India Standard Time)</p>
+                              </div>                              
+                           </div>
+                        </div>
+                        <div class="border border-solid border-[#c6c6c6] p-5 rounded-[10px] bg-[#FEFEFE] bg-opacity-75 mb-5 relative">
+                           <h4 class="text-xl font-medium text-[#525252]">Location</h4>
+                           <div class="flex items-start pt-3">
+                              <div class="flex w-[35px]" style="flex: 0 0 35px">
+                                 <img src="images/icon_location.png" width="24px" height="24px">
+                              </div>
+                              <div>
+                                 <p class="text-sm text-[#2a2a2a] font-normal">Ahmedabad Railway Station, Sakar Bazzar Kalupur, Ahmedabad, Gujarat 380002, India, Ahmedabad, India</p>
+                              </div>                              
+                              
+                           </div>
+                           <div class="rounded-[20px] overflow-hidden mt-4">
+                              <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=329&amp;height=234&amp;hl=en&amp;q=ahmedabad&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:234px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:234px;}.gmap_iframe {height:234px!important;}</style></div>
+                           </div>
+                        </div>
+                        <div class="border border-solid border-[#c6c6c6] p-5 rounded-[10px] bg-[#FEFEFE] bg-opacity-75 mb-5 relative">
+                           <h4 class="text-xl font-medium text-[#525252] mb-5">Related Posts</h4>
+                           <div>
+                              <div class="flex lg:rounded-[20px] rounded-[10px] border border-[#C6C6C6] bg-white mb-5">
+                                 <div class="w-[120px]" style="flex: 0 0 120px;">
+                                    <div class="relative lg:pt-[85%] h-full overflow-hidden lg:rounded-[20px] rounded-[10px] bg-[#D4D3D3]">
+                                       <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <div class="flex flex-col justify-center p-4">
+                                       <p class="text-xs text-[#525252] font-normal leading-4 line-clamp-2 mb-2">Thrissur Pooram Festival 2023: History, Timings, Celebrations</p>
+                                       <p class="text-[10px] font-light text-[#525252] leading-4 line-clamp-3">Published : 09 May 2023 <br>pranav sachaniya</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="flex lg:rounded-[20px] rounded-[10px] border border-[#C6C6C6] bg-white mb-5">
+                                 <div class="w-[120px]" style="flex: 0 0 120px;">
+                                    <div class="relative lg:pt-[90%] h-full overflow-hidden lg:rounded-[20px] rounded-[10px] bg-[#D4D3D3]">
+                                       <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <div class="flex flex-col justify-center p-4">
+                                       <p class="text-xs text-[#525252] font-normal leading-4 line-clamp-2 mb-2">Thrissur Pooram Festival 2023: History, Timings, Celebrations</p>
+                                       <p class="text-[10px] font-light text-[#525252] leading-4 line-clamp-3">Published : 09 May 2023 <br>pranav sachaniya</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="flex lg:rounded-[20px] rounded-[10px] border border-[#C6C6C6] bg-white mb-5">
+                                 <div class="w-[120px]" style="flex: 0 0 120px;">
+                                    <div class="relative lg:pt-[90%] h-full overflow-hidden lg:rounded-[20px] rounded-[10px] bg-[#D4D3D3]">
+                                       <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <div class="flex flex-col justify-center p-4">
+                                       <p class="text-xs text-[#525252] font-normal leading-4 line-clamp-2 mb-2">Thrissur Pooram Festival 2023: History, Timings, Celebrations</p>
+                                       <p class="text-[10px] font-light text-[#525252] leading-4 line-clamp-3">Published : 09 May 2023 <br>pranav sachaniya</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text-center">
+                     <p class="text-orange xl:text-2xl md:text-xl text-sm font-bold font-futura">Explore Your Workapce</p>
+                     <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">Photos Of Heritage Walk</h2>
+                     <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">Lorem Ipsum is simply dummy text of the printing.</p>
+                  </div>
+                  <div class="grid grid-cols-12 gap-4 my-16 mb-0">
+                     <div class="row-span-2 lg:col-span-4 md:col-span-6 sm:col-span-6 col-span-12 grid gap-4">
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[225px] relative bg-cover bg-no-repeat bg-center bg-[url(images/image-1.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[225px] relative bg-cover bg-no-repeat bg-center bg-[url(images/image-2.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row-span-2 lg:col-span-4 md:col-span-6 sm:col-span-6 col-span-12 grid gap-4">
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[225px] relative bg-cover bg-no-repeat bg-center bg-[url(images/image-3.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row-span-2 lg:col-span-4 md:col-span-6 sm:col-span-6 col-span-12 grid gap-4">
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[225px] relative bg-cover bg-no-repeat bg-center bg-[url(images/image-4.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[225px] relative bg-cover bg-no-repeat bg-center bg-[url(images/image-5.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row-span-2 lg:col-span-6 md:col-span-6 sm:col-span-6 col-span-12 grid gap-4">
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[225px] relative bg-cover bg-no-repeat bg-center bg-[url(images/jaipur.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row-span-2 lg:col-span-6 md:col-span-12 col-span-12 md:flex w-full lg:grid gap-4">
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[280px] lg:w-auto md:w-1/2 relative bg-cover bg-no-repeat bg-center bg-[url(images/ahmedabad.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="rounded-[20px] bg-[#E8E8E8] p-4 min-h-[280px] lg:w-auto md:w-1/2 relative bg-cover bg-no-repeat bg-center bg-[url(images/ahmedabad.png)] group">
+                           <div class="absolute bottom-5 right-5 h-10 w-10 rounded-full overflow-hidden">
+                              <img src="images/profile_image.png" alt="profile-image" class="h-full w-full object-cover">
+                           </div>
+                           <div class="place-detail-box">
+                              <h4 class="text-base text-white font-museo font-bold mb-3">Rudreshwar Mahadev Temple</h4>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-2"><img src="images/location_white.png" alt="icon" width="15px" height="15px" class="me-1">Almora Hill Station, Uttarakhand</p>
+                              <p class="text-xs text-white font-museo font-medium flex items-center mb-3"><img src="images/person_white.png" alt="icon" width="15px" height="15px" class="me-1">By Jignesh Gohel</p>
+                              <div class="pt-3  flex justify-between items-center border-t border-solid border-white">
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/like_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Likes</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/review_star_white.png" alt="icon" width="15px" height="15px" class="me-1">75 Reviews</p>
+                                 <p class="text-xs text-white font-museo font-medium flex items-center"><img src="images/comment_white_icon.png" alt="icon" width="15px" height="15px" class="me-1">0 Comments</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-white">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <p class="text-orange xl:text-2xl md:text-xl text-sm font-bold font-futura">Explore Your Workapce</p>
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">Top Tours In India</h2>
+                  <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">Lorem Ipsum is simply dummy text of the printing.</p>
+               </div>
+               <div class="grid grid-cols-12 gap-4 my-16">
+                  <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-1.5 rounded-full bg-[#D93131] text-white text-sm font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              <p class="text-xs text-[#535353] font-medium">&#8377; 20000</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-1.5 rounded-full bg-[#D93131] text-white text-sm font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              <p class="text-xs text-[#535353] font-medium">&#8377; 20000</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-1.5 rounded-full bg-[#D93131] text-white text-sm font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              <p class="text-xs text-[#535353] font-medium">&#8377; 20000</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="lg:col-span-3 lg:block md:hidden md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-1.5 rounded-full bg-[#D93131] text-white text-sm font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              <p class="text-xs text-[#535353] font-medium">&#8377; 20000</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex justify-center">
+                  <a href="#" class="primary-btn py-3 text-xl">See All</a>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-[#f5f5f5]">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <p class="text-orange xl:text-2xl md:text-xl text-sm font-bold font-futura">Explore Your Workapce</p>
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">The Experience By The People Like You</h2>
+                  <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">Lorem Ipsum is simply dummy text of the printing.</p>
+               </div>
+               <div class="py-16">
+                  <div class="flex flex-wrap">
+                     <div class=" md:w-4/12 md:pe-6 w-full mb-5">
+                        <div class="rounded-[20px] w-full md:min-h-[300px] border border-[#C6C6C6] flex items-center justify-center p-4 shadow-none transition duration-700 hover:shadow-custom hover:bg-white">
+                           <div>
+                              <p class="text-5xl text-center text-orange font-bold font-museo mb-0">4.0/<span class="text-3xl">5</span></p>
+                              <p class="text-[#2a2a2a] text-3xl font-medium mb-6 text-center">Excellent</p>
+                              <p class="text-[#535353] text-2xl font-medium text-center">From 21 Reviews</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="md:w-8/12 w-full">
+                        <div>
+                           <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5 transition duration-700 hover:bg-white">
+                              <div class="review-image">
+                                 <div class="relative pt-[100%] rounded-full overflow-hidden">
+                                    <img src="images/avtar.png" alt="author" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="review-content">
+                                 <h4 class="font-bold text-2xl text-[#2A2A2A]">John Smith<span class="text-base text-[#525252] font-medium ms-2">Designer</span></h4>
+                                 <p class="font-medium text-base text-[#8d8d8d]">February 14, 2022</p>
+                                 <ul class="rating flex gap-2 relative my-3">
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                 </ul>
+                                 <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                           </div>
+                           <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5 transition duration-700 hover:bg-white">
+                              <div class="review-image">
+                                 <div class="relative pt-[100%] rounded-full overflow-hidden">
+                                    <img src="images/avtar.png" alt="author" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="review-content">
+                                 <h4 class="font-bold text-2xl text-[#2A2A2A]">John Smith<span class="text-base text-[#525252] font-medium ms-2">Designer</span></h4>
+                                 <p class="font-medium text-base text-[#8d8d8d]">February 14, 2022</p>
+                                 <ul class="rating flex gap-2 relative my-3">
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                 </ul>
+                                 <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                           </div>
+                           <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5 transition duration-700 hover:bg-white">
+                              <div class="review-image">
+                                 <div class="relative pt-[100%] rounded-full overflow-hidden">
+                                    <img src="images/avtar.png" alt="author" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="review-content">
+                                 <h4 class="font-bold text-2xl text-[#2A2A2A]">John Smith<span class="text-base text-[#525252] font-medium ms-2">Designer</span></h4>
+                                 <p class="font-medium text-base text-[#8d8d8d]">February 14, 2022</p>
+                                 <ul class="rating flex gap-2 relative my-3">
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                 </ul>
+                                 <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                           </div>
+                           <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5 transition duration-700 hover:bg-white">
+                              <div class="review-image">
+                                 <div class="relative pt-[100%] rounded-full overflow-hidden">
+                                    <img src="images/avtar.png" alt="author" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="review-content">
+                                 <h4 class="font-bold text-2xl text-[#2A2A2A]">John Smith<span class="text-base text-[#525252] font-medium ms-2">Designer</span></h4>
+                                 <p class="font-medium text-base text-[#8d8d8d]">February 14, 2022</p>
+                                 <ul class="rating flex gap-2 relative my-3">
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                    <li>
+                                       <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                          <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                       </svg>                              
+                                    </li>
+                                 </ul>
+                                 <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text-right mt-7">
+                           <a href="#" class="text-base text-orange font-medium hover:underline ">See All Reviews ></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-white">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">Add Reviews</h2>
+                  <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">Lorem Ipsum is simply dummy text of the printing.</p>
+               </div>
+               <div class="pt-16">
+                  <label class="text-2xl font-bold mb-3 block">Overall Ratings *</label>
+                  <ul class="rating flex gap-3 relative mb-16">
+                     <li>
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                        </svg>                              
+                     </li>
+                     <li>
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                        </svg>                              
+                     </li>
+                     <li>
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                        </svg>                              
+                     </li>
+                     <li>
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                        </svg>                              
+                     </li>
+                     <li>
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                        </svg>                              
+                     </li>
+                  </ul>
+                  <textarea class="resize-none border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:border-blue-500 w-full min-h-[250px]" placeholder="Your Review"></textarea>
+                  <a href="#" class="primary-btn py-3 text-xl mt-16 inline-block min-w-[180px] text-center">Submit</a>
+               </div>
+            </div>
+         </section>
+          <section class="sm:py-16 py-10 bg-[#f5f5f5]">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <p class="text-orange xl:text-2xl md:text-xl text-sm font-bold font-futura">Explore Your Workapce</p>
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">Top Travel Blogs</h2>
+                  <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">Lorem Ipsum is simply dummy text of the printing.</p>
+               </div>
+               <div class="sm:my-16 my-10 grid grid-cols-12 gap-3.5">
+                  <div class="sm:col-span-5 col-span-12 row-span-3">
+                     <div class="lg:rounded-[20px] rounded-[10px] border-2 border-[#C6C6C6] bg-white min-h-full flex flex-col">
+                        <div class="relative pt-[80%] overflow-hidden lg:rounded-[20px] rounded-[10px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="col-span-3 p-4 ps-3 flex flex-col grow">
+                           <h3 class="xl:text-2xl md:text-xl text-sm text-black font-bold mb-2.5 line-clamp-1">A quick guid about the story and detail</h3>
+                           <p class="text-sm text-[#535353] font-normal leading-4 line-clamp-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aliquam et, doloribus dignissimos, laudantium corporis perspiciatis iure, odit dolores quibusdam commodi</p>
+                           <a href="#" class="text-sm text-[#535353] font-normal capitalize mt-auto block">read more >></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sm:col-span-7 col-span-12 row-span-3 grid gap-3.5">
+                     <div class="grid grid-cols-11 gap-4 lg:rounded-[20px] rounded-[10px] border-2 border-[#C6C6C6] bg-white">
+                        <div class="lg:col-span-3 col-span-4">
+                           <div class="relative lg:pt-[100%] h-full overflow-hidden lg:rounded-[20px] rounded-[10px] bg-[#D4D3D3]">
+                              <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                           </div>
+                        </div>
+                        <div class="lg:col-span-8 col-span-7 p-4 ps-3 flex flex-col">
+                           <h3 class="xl:text-2xl md:text-xl text-sm text-black font-bold mb-2.5 line-clamp-1">A quick guid about the story and detail</h3>
+                           <p class="text-sm text-[#535353] font-normal leading-4 line-clamp-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aliquam et, doloribus dignissimos, laudantium corporis perspiciatis iure, odit dolores quibusdam commodi</p>
+                           <a href="#" class="text-sm text-[#535353] font-normal capitalize mt-auto block">read more >></a>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-11 gap-4 lg:rounded-[20px] rounded-[10px] border-2 border-[#C6C6C6] bg-white">
+                        <div class="lg:col-span-3 col-span-4">
+                           <div class="relative lg:pt-[100%] h-full overflow-hidden lg:rounded-[20px] rounded-[10px] bg-[#D4D3D3]">
+                              <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                           </div>
+                        </div>
+                        <div class="lg:col-span-8 col-span-7 p-4 ps-3 flex flex-col">
+                           <h3 class="xl:text-2xl md:text-xl text-sm text-black font-bold mb-2.5 line-clamp-1">A quick guid about the story and detail</h3>
+                           <p class="text-sm text-[#535353] font-normal leading-4 line-clamp-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aliquam et, doloribus dignissimos, laudantium corporis perspiciatis iure, odit dolores quibusdam commodi</p>
+                           <a href="#" class="text-sm text-[#535353] font-normal capitalize mt-auto block">read more >></a>
+                        </div>
+                     </div>
+                     <div class="grid grid-cols-11 gap-4 lg:rounded-[20px] rounded-[10px] border-2 border-[#C6C6C6] bg-white">
+                        <div class="lg:col-span-3 col-span-4">
+                           <div class="relative lg:pt-[100%] h-full overflow-hidden lg:rounded-[20px] rounded-[10px] bg-[#D4D3D3]">
+                              <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                           </div>
+                        </div>
+                        <div class="lg:col-span-8 col-span-7 p-4 ps-3 flex flex-col">
+                           <h3 class="xl:text-2xl md:text-xl text-sm text-black font-bold mb-2.5 line-clamp-1">A quick guid about the story and detail</h3>
+                           <p class="text-sm text-[#535353] font-normal leading-4 line-clamp-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aliquam et, doloribus dignissimos, laudantium corporis perspiciatis iure, odit dolores quibusdam commodi</p>
+                           <a href="#" class="text-sm text-[#535353] font-normal capitalize mt-auto block">read more >></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex justify-center">
+                  <a href="#" class="ms-5 primary-btn">See All</a>
+               </div>
+            </div>
+         </section>
+      </div>
+      <footer class="bg-black lg:py-[60px] py-[30px] pt-[50px]">
+         <div class="lg:custom-container container">
+            <div class="grid grid-cols-12 gap-4">
+               <div class="lg:col-span-7 col-span-12 lg:text-left text-center">
+                  <h3 class="font-museo font-bold lg:text-4xl text-3xl text-white mb-3">Sign Up for out news letter</h3>
+                  <p class="font-museo text-base text-white font-normal max-w-[600px] lg:ms-0 mx-auto">Stay up to date with the news letter and announcement for the upcoming events and information</p>
+               </div>
+               <div class="lg:col-span-5 col-span-12">
+                  <div class="flex lg:justify-end justify-center">
+                     <input type="email" class="w-full max-w-[280px] me-3 px-6 rounded-full" placeholder="Enter your email">
+                     <button type="submit" class="text-lg text-white bg-[#D93131] rounded-full py-2 px-4">Subscribe</button>
+                  </div>
+               </div>
+            </div>
+            <div class="grid grid-cols-12 gap-4 my-16">
+               <div class="lg:col-span-6 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <p class="text-base text-white max-w-[300px]">Stay up to date with the news letter and announcement for the upcoming  events and information</p>
+               </div>
+               <div class="lg:col-span-2 sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Business</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Career</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">DMCA</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Terms Of Use</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Privacy Policy</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Help </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3 sm:text-right">Contact Us</h4>
+                  <p class="text-base text-white font-normal sm:text-right"><a href="#">+91 00000000000</a></p>
+                  <ul class="flex items-center sm:justify-end justify-start mt-5">
+                     <li class="px-1"><a href="#"><img src="images/Facebook.png" alt="facebook"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Twitter.png" alt="twitter"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Pinterest.png" alt="Pintrest"></a></li>
+                     <li class="px-1 pe-0"><a href="#"><img src="images/Instagram.png" alt="instagram"></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div>
+               <p class="font-museo text-center text-white md:text-base text-sm font-normal">The India ©2023. | Proudly made with in India</p>
+            </div>
+         </div>
+      </footer>
+      <script src="jquery.min.js"></script>
+      <script src="owl.carousel.min.js"></script>
+      <script>
+         $(document).ready(function(){
+            $('button#mobile-menu-btn').click(function(){
+               $('body').find('.mobile-menu').toggleClass('hidden');
+            });
+         });
+         const accordionHeaders = document.querySelectorAll('.accordion-header');
+         accordionHeaders.forEach(header => {
+         header.addEventListener('click', () => {
+            // Toggle the hidden class on the accordion content
+            const content = header.nextElementSibling;
+            header.classList.toggle('active');
+            content.classList.toggle('hidden');
+         });
+         });
+      </script>
+   </body>
+</html>

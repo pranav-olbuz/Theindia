@@ -1,0 +1,670 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The India - Top tours listing</title>
+      <link rel="stylesheet" href="output.css">
+   </head>
+   <body class="min-h-screen flex flex-col text-base">
+      <header class="sm:py-6 py-4 relative top-0 left-0 right-0 z-10">
+         <div class="container flex flex-wrap items-center justify-between">
+            <div>
+              <a href="#">
+               <img src="images/site-logo.png" alt="site-logo" width="86" height="50"/>
+              </a>
+            </div>
+            <div class="flex items-center lg:order-2">
+               <a href="#" class="font-bold sm:text-base text-sm text-black hover:text-orange ">Sign in</a>
+               <a href="#" class="sm:ms-5 ms-2 primary-btn">Add Place</a>
+               <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                  <svg class="hidden w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+               </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden mobile-menu" id="mobile-menu-2">
+               <nav>
+                  <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 absolute top-[30px] right-[30px]" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                     <span class="sr-only">Open main menu</span>
+                     <svg class="w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                     <svg class="hidden w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+                  <ul class="flex lg:items-center item-start flex-wrap lg:flex-row flex-col ">
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Home</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Cities</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Tour</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Blog</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">About Us</a></li>
+                  </ul>
+               </nav>
+            </div>
+            
+         </div>
+      </header>
+      <div class="flex-grow">
+         <section class="bg-[url(images/top-tours-main-image.png)] md:min-h-[500px] min-h-screen md:max-h-screen max-h-max bg-no-repeat bg-center bg-cover flex items-center justify-center">
+            <div class="text-center max-w-[650px] mx-auto px-4 w-full">
+               <h1 class="lg:text-[48px] sm:text-4xl text-3xl lg:leading-[60px] text-white font-bold my-2 mt-0 font-museo">Tours in india</h1>
+               <p class="text-white xl:text-lg text-base font-museo">Looking for something useful to read about travelling in India?</p>
+               <div class="my-3">
+                  <ul class="flex items-center justify-center">
+                     <li class="px-6 relative after:absolute after:content-['>'] after:left-[95%] text-2xl text-white"><a href="#" class="text-2xl text-white">Home</a></li>
+                     <li class="px-6 text-2xl text-white">Top Tours</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-[#f5f5f5]">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">Top Tours</h2>
+                  <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">Lorem Ipsum is simply dummy text of the printing.</p>
+               </div>
+               <div class="pt-16">
+                  <div class="flex flex-wrap">                     
+                     <div class="lg:w-9/12 md:w-8/12 w-full md:ps-5 md:order-2 md:mb-0 mb-5">
+                        <div class="border border-solid border-[#C6C6C6] sm:rounded-[20px] rounded-[10px] sm:p-5 p-3 mb-5">
+                           <div class="flex flex-wrap">
+                              <div class="md:w-5/12 md:pe-7 w-full md:mb-0 mb-4">
+                                 <div class="h-full w-full sm:rounded-[20px] rounded-[10px] overflow-hidden">
+                                    <img src="images/tours-image.png" class="h-full w-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="md:w-7/12">
+                                 <div class="flex flex-wrap justify-between items-end mb-4">
+                                    <h3 class="sm:text-2xl text-xl font-bold text-[#2A2A2A] sm:w-[80%] w-full">Thrilling leh Ladakh Ride With Pangong Lake</h3>
+                                    <p class="sm:text-right sm:w-[20%] w-full text-xs text-[#454141]">From<span class="sm:block inline-block sm:ms-0 ms-2 text-base leading-[22px] font-bold text-[#464646]">$7,000</span></p>
+                                 </div>
+                                 <div class="flex items-center mb-4 ">
+                                    <ul class="rating flex gap-1 relative me-3">
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                    </ul>
+                                    <span class="text-sm font-medium text-[#535353]">(1524 Reviews)</span>
+                                 </div>
+                                 <p class="text-sm text-[#2a2a2a] mb-4">See the bright lights of the Las Vegas Strip and the surrounding region during this nighttime helicopter flight. Soar over this famous stretch of Las Vegas Boulevard with an exclusive sightseeing tour of Sin City’s downtown skyline and beyond,</p>
+                                 <p class="text-xs text-[#535353] font-bold flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              </div>
+                           </div> 
+                        </div>
+                        <div class="border border-solid border-[#C6C6C6] rounded-[20px] p-5 mb-5">
+                           <div class="flex flex-wrap">
+                              <div class="md:w-5/12 md:pe-7 w-full md:mb-0 mb-4">
+                                 <div class="h-full w-full rounded-[20px] overflow-hidden">
+                                    <img src="images/tours-image.png" class="h-full w-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="md:w-7/12">
+                                 <div class="flex flex-wrap justify-between items-end mb-4">
+                                    <h3 class="text-2xl font-bold text-[#2A2A2A] w-[80%]">Thrilling leh Ladakh Ride With Pangong Lake</h3>
+                                    <p class="text-right w-[20%] text-xs text-[#454141]">From<span class="block text-base leading-[22px] font-bold text-[#464646]">$7,000</span></p>
+                                 </div>
+                                 <div class="flex items-center mb-4 ">
+                                    <ul class="rating flex gap-1 relative me-3">
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                    </ul>
+                                    <span class="text-sm font-medium text-[#535353]">(1524 Reviews)</span>
+                                 </div>
+                                 <p class="text-sm text-[#2a2a2a] mb-4">See the bright lights of the Las Vegas Strip and the surrounding region during this nighttime helicopter flight. Soar over this famous stretch of Las Vegas Boulevard with an exclusive sightseeing tour of Sin City’s downtown skyline and beyond,</p>
+                                 <p class="text-xs text-[#535353] font-bold flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              </div>
+                           </div> 
+                        </div>
+                        <div class="border border-solid border-[#C6C6C6] sm:rounded-[20px] rounded-[10px] sm:p-5 p-3 mb-5">
+                           <div class="flex flex-wrap">
+                              <div class="md:w-5/12 md:pe-7 w-full md:mb-0 mb-4">
+                                 <div class="h-full w-full sm:rounded-[20px] rounded-[10px] overflow-hidden">
+                                    <img src="images/tours-image.png" class="h-full w-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="md:w-7/12">
+                                 <div class="flex flex-wrap justify-between items-end mb-4">
+                                    <h3 class="sm:text-2xl text-xl font-bold text-[#2A2A2A] sm:w-[80%] w-full">Thrilling leh Ladakh Ride With Pangong Lake</h3>
+                                    <p class="sm:text-right sm:w-[20%] w-full text-xs text-[#454141]">From<span class="sm:block inline-block sm:ms-0 ms-2 text-base leading-[22px] font-bold text-[#464646]">$7,000</span></p>
+                                 </div>
+                                 <div class="flex items-center mb-4 ">
+                                    <ul class="rating flex gap-1 relative me-3">
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                    </ul>
+                                    <span class="text-sm font-medium text-[#535353]">(1524 Reviews)</span>
+                                 </div>
+                                 <p class="text-sm text-[#2a2a2a] mb-4">See the bright lights of the Las Vegas Strip and the surrounding region during this nighttime helicopter flight. Soar over this famous stretch of Las Vegas Boulevard with an exclusive sightseeing tour of Sin City’s downtown skyline and beyond,</p>
+                                 <p class="text-xs text-[#535353] font-bold flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              </div>
+                           </div> 
+                        </div>
+                        <div class="border border-solid border-[#C6C6C6] rounded-[20px] p-5 mb-5">
+                           <div class="flex flex-wrap">
+                              <div class="md:w-5/12 md:pe-7 w-full md:mb-0 mb-4">
+                                 <div class="h-full w-full rounded-[20px] overflow-hidden">
+                                    <img src="images/tours-image.png" class="h-full w-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="md:w-7/12">
+                                 <div class="flex flex-wrap justify-between items-end mb-4">
+                                    <h3 class="text-2xl font-bold text-[#2A2A2A] w-[80%]">Thrilling leh Ladakh Ride With Pangong Lake</h3>
+                                    <p class="text-right w-[20%] text-xs text-[#454141]">From<span class="block text-base leading-[22px] font-bold text-[#464646]">$7,000</span></p>
+                                 </div>
+                                 <div class="flex items-center mb-4 ">
+                                    <ul class="rating flex gap-1 relative me-3">
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                    </ul>
+                                    <span class="text-sm font-medium text-[#535353]">(1524 Reviews)</span>
+                                 </div>
+                                 <p class="text-sm text-[#2a2a2a] mb-4">See the bright lights of the Las Vegas Strip and the surrounding region during this nighttime helicopter flight. Soar over this famous stretch of Las Vegas Boulevard with an exclusive sightseeing tour of Sin City’s downtown skyline and beyond,</p>
+                                 <p class="text-xs text-[#535353] font-bold flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              </div>
+                           </div> 
+                        </div>
+                        <div class="border border-solid border-[#C6C6C6] sm:rounded-[20px] rounded-[10px] sm:p-5 p-3 mb-5">
+                           <div class="flex flex-wrap">
+                              <div class="md:w-5/12 md:pe-7 w-full md:mb-0 mb-4">
+                                 <div class="h-full w-full sm:rounded-[20px] rounded-[10px] overflow-hidden">
+                                    <img src="images/tours-image.png" class="h-full w-full object-cover object-center">
+                                 </div>
+                              </div>
+                              <div class="md:w-7/12">
+                                 <div class="flex flex-wrap justify-between items-end mb-4">
+                                    <h3 class="sm:text-2xl text-xl font-bold text-[#2A2A2A] sm:w-[80%] w-full">Thrilling leh Ladakh Ride With Pangong Lake</h3>
+                                    <p class="sm:text-right sm:w-[20%] w-full text-xs text-[#454141]">From<span class="sm:block inline-block sm:ms-0 ms-2 text-base leading-[22px] font-bold text-[#464646]">$7,000</span></p>
+                                 </div>
+                                 <div class="flex items-center mb-4 ">
+                                    <ul class="rating flex gap-1 relative me-3">
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                       <li>
+                                          <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                             <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                          </svg>                              
+                                       </li>
+                                    </ul>
+                                    <span class="text-sm font-medium text-[#535353]">(1524 Reviews)</span>
+                                 </div>
+                                 <p class="text-sm text-[#2a2a2a] mb-4">See the bright lights of the Las Vegas Strip and the surrounding region during this nighttime helicopter flight. Soar over this famous stretch of Las Vegas Boulevard with an exclusive sightseeing tour of Sin City’s downtown skyline and beyond,</p>
+                                 <p class="text-xs text-[#535353] font-bold flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              </div>
+                           </div> 
+                        </div>
+                     </div>
+                     <div class="lg:w-3/12 md:w-4/12 w-full md:order-1">
+                        <div class="border border-solid border-orange rounded-ss-[10px] rounded-se-[10px] p-5 bg-orange">
+                           <h4 class="text-white mb-4 text-base font-bold">When are you traveling?</h4>
+                           <div class="bg-white rounded w-full flex px-4 py-1 items-center">
+                              <img src="images/Tear-Off-Calendar.png" alt="Tear-Off-Calendar" class="w-[20px] h-[20px]">
+                              <input type="date" class="appearance-none ms-1 bg-transparent bg-none w-full">
+                           </div>
+                        </div>
+                        <div class="border border-solid border-[#C6C6C6] border-t-0 rounded-es-[10px] rounded-ee-[10px] p-5 bg-white">
+                           <h4 class="text-[#2a2a2a] mb-4 text-base font-bold pb-3 border-b border-solid border-[#D93131]">Ratings</h4>
+                           <div class="pb-5">
+                              <ul class="rating flex gap-1 relative mb-3">
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                              </ul>
+                              <ul class="rating flex gap-1 relative mb-3">
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                              </ul>
+                              <ul class="rating flex gap-1 relative mb-3">
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                              </ul>
+                              <ul class="rating flex gap-1 relative mb-3">
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                              </ul>
+                              <ul class="rating flex gap-1 relative mb-3">
+                                 <li>
+                                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]">
+                                       <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                    </svg>                              
+                                 </li>
+                              </ul>
+                           </div>
+                           <h4 class="text-[#2a2a2a] mb-4 text-base font-bold pb-3 border-b border-solid border-[#D93131]">Special</h4>
+                           <div class="pb-5">
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_1" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_1" class="ml-2 text-gray-700 cursor-pointer">Deals & Discounts</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_2" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_2" class="ml-2 text-gray-700 cursor-pointer">Free Cancellation</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_3" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_3" class="ml-2 text-gray-700 cursor-pointer">Likely to Sell Out</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_4" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_4" class="ml-2 text-gray-700 cursor-pointer">Skip-The-Line</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_5" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_5" class="ml-2 text-gray-700 cursor-pointer">Private Tour</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_6" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_6" class="ml-2 text-gray-700 cursor-pointer">Viator Exclusive</label>
+                              </div>
+                           </div>
+                           <h4 class="text-[#2a2a2a] mb-4 text-base font-bold pb-3 border-b border-solid border-[#D93131]">Price</h4>
+                           <ul class="pb-5">
+                              
+                           </ul>
+                           <h4 class="text-[#2a2a2a] mb-4 text-base font-bold pb-3 border-b border-solid border-[#D93131]">Duration</h4>
+                           <div class="pb-5">
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_1-1" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_1-1" class="ml-2 text-gray-700 cursor-pointer">4 Days - 5 Night</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_1-2" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_1-2" class="ml-2 text-gray-700 cursor-pointer">4 Days - 5 Night</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_1-3" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_1-3" class="ml-2 text-gray-700 cursor-pointer">4 Days - 5 Night</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_1-4" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_1-4" class="ml-2 text-gray-700 cursor-pointer">4 Days - 5 Night</label>
+                              </div>
+                              <div class="flex items-center">
+                                 <input id="myCheckbox_1-5" type="checkbox" class="form-checkbox text-indigo-600 h-5 w-5">
+                                 <label for="myCheckbox_1-5" class="ml-2 text-gray-700 cursor-pointer">4 Days - 5 Night</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w-full py-8 md:order-3">
+                        <ul class="flex flex-wrap justify-center items-center gap-5">
+                           <li>
+                              <a href="#" class="w-[38px] h-[38px] rounded-lg bg-white hover:bg-orange text-[#2a2a2a] hover:text-white inline-flex items-center justify-center text-[22px] font-normal"><</a>
+                           </li>
+                           <li>
+                              <a href="#" class="w-[38px] h-[38px] rounded-lg bg-orange hover:bg-orange text-white hover:text-white inline-flex items-center justify-center  text-[22px] font-normal">1</a>
+                           </li>
+                           <li>
+                              <a href="#" class="w-[38px] h-[38px] rounded-lg bg-white hover:bg-orange text-[#2a2a2a] hover:text-white inline-flex items-center justify-center text-[22px] font-normal">2</a>
+                           </li>
+                           <li>
+                              <a href="#" class="w-[38px] h-[38px] rounded-lg bg-white hover:bg-orange text-[#2a2a2a] hover:text-white inline-flex items-center justify-center text-[22px] font-normal">3</a>
+                           </li>
+                           <li>
+                              <a href="#" class="w-[38px] h-[38px] rounded-lg bg-white hover:bg-orange text-[#2a2a2a] hover:text-white inline-flex items-center justify-center text-[22px] font-normal">4</a>
+                           </li>
+                           <li>
+                              <a href="#" class="w-[38px] h-[38px] rounded-lg bg-white hover:bg-orange text-[#2a2a2a] hover:text-white inline-flex items-center justify-center text-[22px] font-normal">5</a>
+                           </li>
+                           <li>
+                              <a href="#" class="w-[38px] h-[38px] rounded-lg bg-white hover:bg-orange text-[#2a2a2a] hover:text-white inline-flex items-center justify-center text-[22px] font-normal">></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-white">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-3.5 mb-2 font-montserrat">Explore Promoted Tours for Mountain</h2>
+                  <p class="xl:text-2xl md:text-xl text-sm font-medium text-black">Lorem Ipsum is simply dummy text of the printing.</p>
+               </div>
+               <div class="grid grid-cols-12 gap-4 my-16">
+                  <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </path></svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-3 rounded-full bg-[#D93131] text-white text-[10px] leading-[20px] font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </path></svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-3 rounded-full bg-[#D93131] text-white text-[10px] leading-[20px] font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6]  shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </path></svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-3 rounded-full bg-[#D93131] text-white text-[10px] leading-[20px] font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="lg:col-span-3 lg:block md:hidden md:col-span-4 sm:col-span-6 col-span-12 grid gap-4">
+                     <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                        <div class="relative pt-[80%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                           <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                        </div>
+                        <div class="p-4">
+                           <div class="flex items-center justify-between mb-4 text-[#5a5a5a]">
+                              <p class="flex items-center text-sm">
+                                 <svg class="me-2" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.69514 0.804688L9.29915 5.72794H14.4898L10.2905 8.77068L11.8945 13.6939L7.69514 10.6512L3.49579 13.6939L5.0998 8.77068L0.900451 5.72794H6.09113L7.69514 0.804688Z" fill="#FAE210">
+                                 </path></svg>
+                                 <span class="font-bold me-1">5.0</span> (75 Reviews)
+                              </p>
+                              <p class="py-0.5 px-3 rounded-full bg-[#D93131] text-white text-[10px] leading-[20px] font-bold">7D/1N</p>
+                           </div>
+                           <p class="text-base text-[#535353] font-medium min-h-[40px] mb-3.5">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                           <div class="flex justify-between">
+                              <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="18px" height="18px" class="me-1">Ladakh, India</p>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <footer class="bg-black lg:py-[60px] py-[30px] pt-[50px]">
+         <div class="lg:custom-container container">
+            <div class="grid grid-cols-12 gap-4">
+               <div class="lg:col-span-7 col-span-12 lg:text-left text-center">
+                  <h3 class="font-museo font-bold lg:text-4xl text-3xl text-white mb-3">Sign Up for out news letter</h3>
+                  <p class="font-museo text-base text-white font-normal max-w-[600px] lg:ms-0 mx-auto">Stay up to date with the news letter and announcement for the upcoming events and information</p>
+               </div>
+               <div class="lg:col-span-5 col-span-12">
+                  <div class="flex lg:justify-end justify-center">
+                     <input type="email" class="w-full max-w-[280px] me-3 px-6 rounded-full" placeholder="Enter your email">
+                     <button type="submit" class="text-lg text-white bg-[#D93131] rounded-full py-2 px-4">Subscribe</button>
+                  </div>
+               </div>
+            </div>
+            <div class="grid grid-cols-12 gap-4 my-16">
+               <div class="lg:col-span-6 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <p class="text-base text-white max-w-[300px]">Stay up to date with the news letter and announcement for the upcoming  events and information</p>
+               </div>
+               <div class="lg:col-span-2 sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Business</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Career</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">DMCA</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Terms Of Use</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Privacy Policy</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Help </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3 sm:text-right">Contact Us</h4>
+                  <p class="text-base text-white font-normal sm:text-right"><a href="#">+91 00000000000</a></p>
+                  <ul class="flex items-center sm:justify-end justify-start mt-5">
+                     <li class="px-1"><a href="#"><img src="images/Facebook.png" alt="facebook"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Twitter.png" alt="twitter"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Pinterest.png" alt="Pintrest"></a></li>
+                     <li class="px-1 pe-0"><a href="#"><img src="images/Instagram.png" alt="instagram"></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div>
+               <p class="font-museo text-center text-white md:text-base text-sm font-normal">The India ©2023. | Proudly made with in India</p>
+            </div>
+         </div>
+      </footer>
+      <script src="jquery.min.js"></script>
+      <script src="owl.carousel.min.js"></script>
+      <script>
+         $(document).ready(function(){
+            $('button#mobile-menu-btn').click(function(){
+               $('body').find('.mobile-menu').toggleClass('hidden');
+            });
+         });
+         const accordionHeaders = document.querySelectorAll('.accordion-header');
+         accordionHeaders.forEach(header => {
+         header.addEventListener('click', () => {
+            // Toggle the hidden class on the accordion content
+            const content = header.nextElementSibling;
+            header.classList.toggle('active');
+            content.classList.toggle('hidden');
+         });
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login Page</title>
+      <link rel="stylesheet" href="output.css">
+   </head>
+   <body class="min-h-screen flex flex-col text-base">      
+      <div class="flex-grow">
+         <div class="flex flex-wrap">
+            <div class="xl:w-1/2 md:w-4/12 md:block hidden h-screen">
+               <img src="images/login-bg.png" alt="login-bg" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="xl:w-1/2 md:w-8/12 w-full h-full min-h-screen 2xl:ps-[100px] flex items-center justify-center">               
+                  <div class="max-w-[540px] px-5 2xl:me-auto 2xl:ms-0 mx-auto flex-grow">
+                     <div class="">
+                        <div class="mb-10">
+                           <h1 class="sm:text-5xl text-3xl font-bold text-[#2a2a2a] sm:mb-4 mb-2">Login Here</h1>
+                           <p class="sm:text-2xl text-xl font-medium text-[#525252] ">Welcome to the India</p>
+                        </div>
+                        <div class="mb-10">
+                           <form>
+                              <div class="mb-[30px]">
+                                 <input type="email" class="w-full h-[50px] border border-solid border-[#BABABA] rounded-[10px] px-5 py-3" placeholder="Enter Your Email">
+                              </div>
+                              <div class="mb-[30px]">
+                                 <input type="password" class="w-full h-[50px] border border-solid border-[#BABABA] rounded-[10px] px-5 py-3" placeholder="Enter Your Password">
+                              </div>
+                              <div class="mt-10 relative text-center before:absolute before:content-[''] before:left-0 before:right-0  before:h-[1px] before:top-1/2 before:translate-y-[-50%] before:bg-[#A9A9A9]">
+                                 <span class="bg-white px-3 relative">Or</span>
+                              </div>
+                              <div class="sign-in-options my-10 flex flex-wrap">
+                                 <div class="sm:w-1/2 w-full sm:mb-0 mb-3 sm:pe-2">
+                                    <button class="text-center w-full text-[#626262] text-base font-medium border-[1.5px] border-solid border-[#616161] rounded-[10px] flex items-center justify-center h-[50px]"><img src="images/Google.png" class="h-[30px] w-[30px] me-2">Log In With Google</button>
+                                 </div>
+                                 <div class="sm:w-1/2 w-full sm:ps-2">
+                                    <button class="text-center w-full text-[#626262] text-base font-medium border-[1.5px] border-solid border-[#616161] rounded-[10px] flex items-center justify-center h-[50px]"><img src="images/Facebook_icon.png" class="h-[30px] w-[30px] me-2">Log In With Facebook</button>
+                                 </div>
+                              </div>
+                              <div class="mb-4">
+                                 <button class="primary-btn w-full rounded-[10px] py-3 mb-4">Login</button>
+                                 <p class="text-sm font-normal">New User ? <a href="register.html" class="text-orange text-sm hover:underline">Create your account</a></p>
+                              </div>
+                           </form>
+                        </div>
+                        <p class="text-center text-xs font-medium tracking-wider my-3">The India ©2023. | Proudly made with in India</p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+      <script src="jquery.min.js"></script>
+   </body>
+</html>

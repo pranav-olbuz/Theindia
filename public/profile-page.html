@@ -1,0 +1,602 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The India - make a trip with the india</title>
+      <link rel="stylesheet" href="output.css">
+   </head>
+   <body class="min-h-screen flex flex-col text-base">
+        <header class="sm:py-6 py-4 relative top-0 left-0 right-0 z-10">
+        <div class="container flex flex-wrap items-center justify-between">
+           <div>
+             <a href="#">
+             <img src="images/site-logo.png" alt="site-logo" width="86" height="50"/>
+             </a>
+           </div>
+           <div class="flex items-center lg:order-2">
+              <a href="#" class="font-bold sm:text-base text-sm text-black hover:text-orange ">Sign in</a>
+              <a href="#" class="sm:ms-5 ms-2 primary-btn">Add Place</a>
+              <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                 <span class="sr-only">Open main menu</span>
+                 <svg class="w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                 <svg class="hidden w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+           </div>
+           <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden mobile-menu" id="mobile-menu-2">
+              <nav>
+                 <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 absolute top-[30px] right-[30px]" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                 </button>
+                 <ul class="flex lg:items-center item-start flex-wrap lg:flex-row flex-col ">
+                    <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Home</a></li>
+                    <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Cities</a></li>
+                    <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Tour</a></li>
+                    <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Blog</a></li>
+                    <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">About Us</a></li>
+                 </ul>
+              </nav>
+           </div>
+           
+        </div>
+        </header>
+        <div class="flex-grow">
+            <section class="">
+                <div class="min-h-[320px]  max-h-[320px] w-full bg-gray-300 relative">
+                    <img src="images/profile-banner.png" alt="profile-banner" class="h-full w-full object-cover object-center absolute">
+                </div>
+            </section>
+            <section class="relative">
+                <div class="lg:custom-container container">
+                    <div class="flex flex-wrap mx-[-15px]">
+                        <div class="px-[15px]  md:w-4/12 w-full">
+                           <div class="mt-[-80px] pb-10">
+                              <div class="w-[175px] h-[175px] rounded-full overflow-hidden">
+                                 <img src="images/profile-image.png" alt="profile-image" class="h-full w-full object-cover object-center">
+                              </div>
+                              <h2 class="text-4xl font-bold mt-[25px]">John Wick</h2>
+                              <p class="text-base text-[#525252] font-medium mb-5">Local Guide <span class="text-orange">Level 6</span></p>
+                              <p class="text-base text-[#525252] font-medium mb-5">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                              <div class="border border-solid border-[#DEDDDD] rounded-[10px] px-3 mb-5">
+                                 <div class="flex flex-wrap">
+                                       <div class="w-1/2 p-4">
+                                          <p class="font-bold text-xl text-[#2a2a2a] ">15<span class="font-medium block text-xs text-[#6D6D6D]">Travelogues</span></p>
+                                       </div>
+                                       <div class="w-1/2 p-4">
+                                          <p class="font-bold text-xl text-[#2a2a2a] ">37k<span class="font-medium block text-xs text-[#6D6D6D]">Pictures</span></p>
+                                       </div>
+                                       <div class="w-1/2 p-4">
+                                          <p class="font-bold text-xl text-[#2a2a2a] ">25<span class="font-medium block text-xs text-[#6D6D6D]">Likes</span></p>
+                                       </div>
+                                       <div class="w-1/2 p-4">
+                                          <p class="font-bold text-xl text-[#2a2a2a] ">37k<span class="font-medium block text-xs text-[#6D6D6D]">Places</span></p>
+                                       </div>
+                                       
+                                 </div>
+                              </div>
+                              <ul class="flex flex-wrap gap-5">
+                                 <li>
+                                    <a href="#">
+                                       <img src="images/facebook_dark.png" alt="facebook">
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#">
+                                       <img src="images/pinterest_dark.png" alt="Pinterest">
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#">
+                                       <img src="images/twitter_dark.png" alt="twitter">
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="px-[15px] md:w-8/12 w-full">
+                            <div class="md:py-16 md:pt-28 py-5">
+                                 <ul id="tabs" class="inline-flex w-full border-b flex-wrap">
+                                    <li class="bg-white lg:px-4 px-2 text-[#525252] lg:text-2xl text-sm  font-medium py-2 rounded-t border-b border-orange -mb-px active_tab flex-grow relative">
+                                        <a id="default-tab" class="inline-flex" href="#first">
+                                            <img src="images/image_gallery_icon.png" alt="image_gallery_icon" class="lg:w-[30px] w-[20px] lg:h-[30px] h-[20px] me-2">
+                                            Photos
+                                        </a>
+                                    </li>
+                                    <li class="bg-white lg:px-4 px-2 text-[#525252]  lg:text-2xl text-sm font-medium py-2 rounded-t flex-grow">
+                                        <a href="#second" class="inline-flex">
+                                            <img src="images/suitcase_icon.png" alt="suitcase_icon" class="lg:w-[30px] w-[20px] lg:h-[30px] h-[20px] me-2">
+                                            Travelogues
+                                        </a>
+                                    </li>
+                                    <li class="bg-white lg:px-4 px-2 text-[#525252] lg:text-2xl text-sm font-medium py-2 rounded-t flex-grow">
+                                        <a href="#third" class="inline-flex">
+                                            <img src="images/places_icon.png" alt="places_icon" class="lg:w-[30px] w-[20px] lg:h-[30px] h-[20px] me-2">
+                                            Places
+                                        </a>
+                                    </li>
+                                    <li class="bg-white lg:px-4 px-2 text-[#525252] lg:text-2xl text-sm font-medium py-2 rounded-t flex-grow">
+                                        <a href="#fourth" class="inline-flex">
+                                            <img src="images/popular-topic_icon.png" alt="popular-topic_icon" class="lg:w-[30px] w-[20px] lg:h-[30px] h-[20px] me-2">
+                                            Reviews
+                                        </a>
+                                    </li>
+                                 </ul>
+                                
+                                  <!-- Tab Contents -->
+                                <div id="tab-contents">
+                                    <div id="first" class="py-4">
+                                      <div class="flex flex-wrap mx-[-12px]">
+                                        <div class="w-1/2 px-3 mb-6">
+                                            <div class="pt-[65%] relative rounded-[20px] overflow-hidden">
+                                                <img src="images/gujarat_state.png" alt="gallry-photo" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                        <div class="w-1/2 px-3 mb-6">
+                                            <div class="pt-[65%] relative rounded-[20px] overflow-hidden">
+                                                <img src="images/gujarat_state.png" alt="gallry-photo" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                        <div class="w-1/2 px-3 mb-6">
+                                            <div class="pt-[65%] relative rounded-[20px] overflow-hidden">
+                                                <img src="images/gujarat_state.png" alt="gallry-photo" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                        <div class="w-1/2 px-3 mb-6">
+                                            <div class="pt-[65%] relative rounded-[20px] overflow-hidden">
+                                                <img src="images/gujarat_state.png" alt="gallry-photo" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                        <div class="w-1/2 px-3 mb-6">
+                                            <div class="pt-[65%] relative rounded-[20px] overflow-hidden">
+                                                <img src="images/gujarat_state.png" alt="gallry-photo" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                        <div class="w-1/2 px-3 mb-6">
+                                            <div class="pt-[65%] relative rounded-[20px] overflow-hidden">
+                                                <img src="images/gujarat_state.png" alt="gallry-photo" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="second" class="hidden py-4">
+                                        <div class="grid grid-cols-12 gap-5">
+                                            <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                               <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                  <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                                                     <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                  </div>
+                                                  <div class="px-6 py-8">
+                                                     <p class="text-xs text-[#535353] font-medium">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                            <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                               <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                  <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px]">
+                                                     <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                  </div>
+                                                  <div class="px-6 py-8">
+                                                     <p class="text-xs text-[#535353] font-medium">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                            <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                               <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                  <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px]">
+                                                     <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                  </div>
+                                                  <div class="px-6 py-8">
+                                                     <p class="text-xs text-[#535353] font-medium">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                            <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-6 py-8">
+                                                      <p class="text-xs text-[#535353] font-medium">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-6 py-8">
+                                                      <p class="text-xs text-[#535353] font-medium">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-6 py-8">
+                                                      <p class="text-xs text-[#535353] font-medium">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                         </div>
+                                         <div class="text-right mt-7">
+                                            <a href="#" class="text-base text-orange font-medium hover:underline ">Load more travelogues &gt;</a>
+                                         </div>
+                                    </div>
+                                    <div id="third" class="hidden py-4">
+                                        <div class="grid grid-cols-12 gap-5">
+                                            <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                               <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                  <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                                                     <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                  </div>
+                                                  <div class="px-5 py-4">
+                                                     <p class="text-xs text-[#535353] font-medium mb-2">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                     <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="16px" height="16px" class="me-1">Ladakh, India</p>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                            <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-5 py-4">
+                                                      <p class="text-xs text-[#535353] font-medium mb-2">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                      <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="16px" height="16px" class="me-1">Ladakh, India</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-5 py-4">
+                                                      <p class="text-xs text-[#535353] font-medium mb-2">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                      <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="16px" height="16px" class="me-1">Ladakh, India</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-5 py-4">
+                                                      <p class="text-xs text-[#535353] font-medium mb-2">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                      <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="16px" height="16px" class="me-1">Ladakh, India</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-5 py-4">
+                                                      <p class="text-xs text-[#535353] font-medium mb-2">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                      <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="16px" height="16px" class="me-1">Ladakh, India</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="lg:col-span-4 md:col-span-6  col-span-12">
+                                                <div class="rounded-[20px] border-2 border-[#C6C6C6] shadow-none transition duration-700 hover:shadow-custom">
+                                                   <div class="relative pt-[70%] overflow-hidden rounded-[20px] mx-[-2px] mt-[-2px] bg-[#D4D3D3]">
+                                                      <img src="images/ladakh.png" alt="ladakh-image" class="absolute top-0 left-0 w-full h-full">
+                                                   </div>
+                                                   <div class="px-5 py-4">
+                                                      <p class="text-xs text-[#535353] font-medium mb-2">Thrilling leh Ladakh Ride With Pangong Lake</p>
+                                                      <p class="text-xs text-[#535353] font-medium flex items-center"><img src="images/location_icon.png" alt="icon" width="16px" height="16px" class="me-1">Ladakh, India</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                         </div>
+                                         <div class="text-right mt-7">
+                                            <a href="#" class="text-base text-orange font-medium hover:underline ">Load more Places &gt;</a>
+                                         </div>
+                                    </div>
+                                    <div id="fourth" class="hidden py-4">
+                                      <div>
+                                        <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5">
+                                            <div class="review-content full">
+                                               <h4 class="font-bold sm:text-2xl text-xl text-[#2A2A2A]">Gateway of India</h4>
+                                               <!-- <span class="text-base text-[#525252] font-medium ms-2">Designer</span> -->
+                                               <p class="font-medium text-base text-[#8d8d8d]">Mumbai, Maharashtra, India</p>
+                                               <ul class="rating flex gap-2 relative my-3">
+                                                  <li>
+                                                     <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                        <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                     </svg>                              
+                                                  </li>
+                                                  <li>
+                                                     <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                        <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                     </svg>                              
+                                                  </li>
+                                                  <li>
+                                                     <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                        <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                     </svg>                              
+                                                  </li>
+                                                  <li>
+                                                     <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                        <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                     </svg>                              
+                                                  </li>
+                                                  <li>
+                                                     <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                        <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                     </svg>                              
+                                                  </li>
+                                               </ul>
+                                               <div class="mb-5">
+                                               <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                </div>
+                                               <p class="text-base font-medium text-[#525252] ">187 views</p>
+                                               <ul class="flex items-center justify-start ms-auto mt-4">
+                                                <li class="me-4">
+                                                   <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/facebook-like.png" class="h-[20px] w-[20px] me-1">5</a>
+                                                </li>
+                                                <li>
+                                                   <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/share-fill.png" class="h-[20px] w-[20px] me-0"></a>
+                                                </li>
+                                             </ul>
+                                            </div>
+                                         </div>
+                                         <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5">
+                                          <div class="review-content full">
+                                             <h4 class="font-bold sm:text-2xl text-xl text-[#2A2A2A]">Gateway of India</h4>
+                                             <!-- <span class="text-base text-[#525252] font-medium ms-2">Designer</span> -->
+                                             <p class="font-medium text-base text-[#8d8d8d]">Mumbai, Maharashtra, India</p>
+                                             <ul class="rating flex gap-2 relative my-3">
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                             </ul>
+                                             <div class="mb-5">
+                                             <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                              </div>
+                                             <p class="text-base font-medium text-[#525252] ">187 views</p>
+                                             <ul class="flex items-center justify-start ms-auto mt-4">
+                                              <li class="me-4">
+                                                 <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/facebook-like.png" class="h-[20px] w-[20px] me-1">5</a>
+                                              </li>
+                                              <li>
+                                                 <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/share-fill.png" class="h-[20px] w-[20px] me-0"></a>
+                                              </li>
+                                           </ul>
+                                          </div>
+                                       </div>
+                                       <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5">
+                                          <div class="review-content full">
+                                             <h4 class="font-bold sm:text-2xl text-xl text-[#2A2A2A]">Gateway of India</h4>
+                                             <!-- <span class="text-base text-[#525252] font-medium ms-2">Designer</span> -->
+                                             <p class="font-medium text-base text-[#8d8d8d]">Mumbai, Maharashtra, India</p>
+                                             <ul class="rating flex gap-2 relative my-3">
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                             </ul>
+                                             <div class="mb-5">
+                                             <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                              </div>
+                                             <p class="text-base font-medium text-[#525252] ">187 views</p>
+                                             <ul class="flex items-center justify-start ms-auto mt-4">
+                                              <li class="me-4">
+                                                 <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/facebook-like.png" class="h-[20px] w-[20px] me-1">5</a>
+                                              </li>
+                                              <li>
+                                                 <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/share-fill.png" class="h-[20px] w-[20px] me-0"></a>
+                                              </li>
+                                           </ul>
+                                          </div>
+                                       </div>
+                                       <div class="rounded-[20px] w-full border border-[#C6C6C6] flex items-start justify-center p-5 mb-5">
+                                          <div class="review-content full">
+                                             <h4 class="font-bold sm:text-2xl text-xl text-[#2A2A2A]">Gateway of India</h4>
+                                             <!-- <span class="text-base text-[#525252] font-medium ms-2">Designer</span> -->
+                                             <p class="font-medium text-base text-[#8d8d8d]">Mumbai, Maharashtra, India</p>
+                                             <ul class="rating flex gap-2 relative my-3">
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                                <li>
+                                                   <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]">
+                                                      <path d="M15.3325 0.971191L18.9323 11.6814H30.5815L21.1571 18.3007L24.7569 29.011L15.3325 22.3917L5.90804 29.011L9.50785 18.3007L0.0834179 11.6814H11.7327L15.3325 0.971191Z" fill="#D8D01A"></path>
+                                                   </svg>                              
+                                                </li>
+                                             </ul>
+                                             <div class="mb-5">
+                                             <p class="text-base font-medium text-[#525252] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                              </div>
+                                             <p class="text-base font-medium text-[#525252] ">187 views</p>
+                                             <ul class="flex items-center justify-start ms-auto mt-4">
+                                              <li class="me-4">
+                                                 <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/facebook-like.png" class="h-[20px] w-[20px] me-1">5</a>
+                                              </li>
+                                              <li>
+                                                 <a href="#" class="text-base font-medium text-[#535353] flex items-center"><img src="images/share-fill.png" class="h-[20px] w-[20px] me-0"></a>
+                                              </li>
+                                           </ul>
+                                          </div>
+                                       </div>
+                                      </div>
+                                      <div class="text-right mt-7">
+                                       <a href="#" class="text-base text-orange font-medium hover:underline ">Load more Reviews &gt;</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="bg-black lg:py-[60px] py-[30px] pt-[50px]">
+            <div class="lg:custom-container container">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="lg:col-span-7 col-span-12 lg:text-left text-center">
+                    <h3 class="font-museo font-bold lg:text-4xl text-3xl text-white mb-3">Sign Up for out news letter</h3>
+                    <p class="font-museo text-base text-white font-normal max-w-[600px] lg:ms-0 mx-auto">Stay up to date with the news letter and announcement for the upcoming events and information</p>
+                </div>
+                <div class="lg:col-span-5 col-span-12">
+                    <div class="flex lg:justify-end justify-center">
+                        <input type="email" class="w-full max-w-[280px] me-3 px-6 rounded-full" placeholder="Enter your email">
+                        <button type="submit" class="text-lg text-white bg-[#D93131] rounded-full py-2 px-4">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-4 my-16">
+                <div class="lg:col-span-6 col-span-12">
+                    <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                    <p class="text-base text-white max-w-[300px]">Stay up to date with the news letter and announcement for the upcoming  events and information</p>
+                </div>
+                <div class="lg:col-span-2 sm:col-span-4 col-span-12">
+                    <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                    <ul>
+                        <li class="text-base text-white font-normal">
+                        <a href="#" class="">Business</a>
+                        </li>
+                        <li class="text-base text-white font-normal">
+                        <a href="#" class="">Career</a>
+                        </li>
+                        <li class="text-base text-white font-normal">
+                        <a href="#" class="">DMCA</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                    <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                    <ul>
+                        <li class="text-base text-white font-normal">
+                        <a href="#" class="">Terms Of Use</a>
+                        </li>
+                        <li class="text-base text-white font-normal">
+                        <a href="#" class="">Privacy Policy</a>
+                        </li>
+                        <li class="text-base text-white font-normal">
+                        <a href="#" class="">Help </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                    <h4 class="text-white xl:text-2xl text-xl font-bold mb-3 sm:text-right">Contact Us</h4>
+                    <p class="text-base text-white font-normal sm:text-right"><a href="#">+91 00000000000</a></p>
+                    <ul class="flex items-center sm:justify-end justify-start mt-5">
+                        <li class="px-1"><a href="#"><img src="images/Facebook.png" alt="facebook"></a></li>
+                        <li class="px-1"><a href="#"><img src="images/Twitter.png" alt="twitter"></a></li>
+                        <li class="px-1"><a href="#"><img src="images/Pinterest.png" alt="Pintrest"></a></li>
+                        <li class="px-1 pe-0"><a href="#"><img src="images/Instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="font-museo text-center text-white md:text-base text-sm font-normal">The India ©2023. | Proudly made with in India</p>
+            </div>
+            </div>
+        </footer>
+        <script src="jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+           $('button#mobile-menu-btn').click(function(){
+              $('body').find('.mobile-menu').toggleClass('hidden');
+           });
+
+
+            let tabsContainer = document.querySelector("#tabs");
+
+            let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+
+            console.log(tabTogglers);
+
+            tabTogglers.forEach(function(toggler) {
+            toggler.addEventListener("click", function(e) {
+                e.preventDefault();
+
+                let tabName = this.getAttribute("href");
+
+                let tabContents = document.querySelector("#tab-contents");
+
+                for (let i = 0; i < tabContents.children.length; i++) {
+                
+                tabTogglers[i].parentElement.classList.remove("border-b", "border-orange", "-mb-px", "bg-white" , "active_tab", "relative");  tabContents.children[i].classList.remove("hidden");
+                if ("#" + tabContents.children[i].id === tabName) {
+                    continue;
+                }
+                tabContents.children[i].classList.add("hidden");
+                
+                }
+                e.target.parentElement.classList.add("border-b", "border-orange" ,"-mb-px", "bg-white","active_tab","relative");
+            });
+            });
+
+        });
+        </script>
+    </body>
+</html>

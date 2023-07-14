@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The India - Places Via Single city</title>
+      <link rel="stylesheet" href="output.css">
+   </head>
+   <body class="min-h-screen flex flex-col text-base">
+      <header class="sm:py-6 py-4 relative top-0 left-0 right-0 z-10">
+         <div class="container flex flex-wrap items-center justify-between">
+            <div>
+              <a href="#">
+              <img src="images/site-logo.png" alt="site-logo" width="86" height="50"/>
+              </a>
+            </div>
+            <div class="flex items-center lg:order-2">
+               <a href="#" class="font-bold sm:text-base text-sm text-black hover:text-orange ">Sign in</a>
+               <a href="#" class="sm:ms-5 ms-2 primary-btn">Add Place</a>
+               <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                  <svg class="hidden w-6 h-6" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+               </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden mobile-menu" id="mobile-menu-2">
+               <nav>
+                  <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center py-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 absolute top-[30px] right-[30px]" aria-controls="mobile-menu-2" aria-expanded="false" id="mobile-menu-btn">
+                     <span class="sr-only">Open main menu</span>
+                     <svg class="w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                     <svg class="hidden w-6 h-6" fill="#666" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+                  <ul class="flex lg:items-center item-start flex-wrap lg:flex-row flex-col ">
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Home</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Cities</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Tour</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">Blog</a></li>
+                     <li><a href="#" class="px-6 py-3 font-bold text-base lg:text-black text-black hover:text-orange ">About Us</a></li>
+                  </ul>
+               </nav>
+            </div>
+            
+         </div>
+      </header>
+      <div class="flex-grow">
+         <section class="bg-[url(images/places-via-city-banner.png)] min-h-[500px] md:max-h-screen max-h-max bg-no-repeat bg-center bg-cover flex items-center justify-center">
+            <div class="text-center max-w-[650px] mx-auto px-4 w-full">
+               <h1 class="lg:text-[48px] sm:text-4xl text-3xl lg:leading-[60px] text-white font-bold my-2 mt-0 font-museo">Grow with The india</h1>
+               <p class="text-white xl:text-lg text-base font-museo">Looking for something useful to read about travelling in India?</p>
+               <div class="my-3">
+                  <ul class="flex items-center justify-center">
+                     <li class="px-6 relative after:absolute after:content-['>'] after:left-[95%] text-2xl text-white"><a href="#" class="text-2xl text-white">Home</a></li>
+                     <li class="px-6 text-2xl text-white">Business</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="py-16 bg-white">
+            <div class="lg:custom-container container">
+               <div class="text-center">
+                  <h2 class="lg:text-5xl text-3xl font-semibold lg:leading-[50px] text-black lg:my-5 my-3 lg:mb-16 mb-8 block font-montserrat">Operator Registration</h2>
+               </div>
+               <div class="border border-solid border-[#BABABA] rounded-[30px] sm:py-20 py-8 px-4">
+                  <form class="lg:w-10/12 w-full mx-auto">
+                     <div class="flex flex-wrap">
+                        <div class="sm:w-1/2 w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Operator First Name</label>
+                              <input type="text" class="form-control" placeholder="Operator First Name">
+                           </div>
+                        </div>
+                        <div class="sm:w-1/2 w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Operator Last Name</label>
+                              <input type="text" class="form-control" placeholder="Operator Last Name">
+                           </div>
+                        </div>
+                        <div class="sm:w-1/2 w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Password</label>
+                              <input type="password" class="form-control" placeholder="Password">
+                           </div>
+                        </div>
+                        <div class="sm:w-1/2 w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Confirm Password</label>
+                              <input type="password" class="form-control" placeholder="Confirm Password">
+                           </div>
+                        </div>
+                        <div class="w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Company Name</label>
+                              <input type="text" class="form-control" placeholder="Company Name">
+                           </div>
+                        </div>
+                        <div class="sm:w-1/2 w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Email</label>
+                              <input type="email" class="form-control" placeholder="Email">
+                           </div>
+                        </div>
+                        <div class="sm:w-1/2 w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Mobile</label>
+                              <input type="number" class="form-control" placeholder="Mobile">
+                           </div>
+                        </div>
+                        <div class="w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Website</label>
+                              <input type="text" class="form-control" placeholder="Website">
+                           </div>
+                        </div>
+                        <div class="w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">City</label>
+                              <input type="text" class="form-control" placeholder="City">
+                           </div>
+                        </div>
+                        <div class="w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Select State</label>
+                              <select class="form-control">
+                                 <option>State 1</option>
+                                 <option>State 2</option>
+                                 <option>State 3</option>
+                                 <option>State 4</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="w-full px-2">
+                           <div class="form-group lg:mb-10 mb-5">
+                              <label class="form-label">Addresss</label>
+                              <textarea placeholder="Address" class="form-control" rows="10"></textarea>
+                           </div>
+                        </div>
+                        <div class="mb-4 w-full px-2">
+                           <button class="primary-btn lg:text-2xl sm:text-xl text-base w-full rounded-[10px] py-3 mb-10">Submit</button>
+                           <p class="lg:text-2xl sm:text-xl text-base font-normal">Already have an account ? <a href="register.html" class="text-orange lg:text-2xl sm:text-xl text-base hover:underline">Login Here</a></p>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="grid grid-cols-12 gap-4 md:my-16 my-8">
+                  <div class="lg:col-span-12 col-span-12 grid lg:gap-[60px] gap-6">
+                     <div>
+                        <h3 class="text-2xl font-bold text-[#2a2a2a] mb-5">Overview</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6 mb-4">With over 1000 active members, 550+ places, 50 detailed travelogues and over 6K plus unique visitors a month, TheIndia is one of the fasted growing travel community portals of India. TheIndia is thrives to provide the best opportunities to the businesses in Travel & Tourism industry of India by connecting with the right audiences at the right time. Here our priority is our customers and by connecting them with the right travel planner, we are committed to provide best travel experience. At the same time, we also want to help small businesses to grow their businesses by listing their services at TheIndia.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">Currently we are having business opportunities for the below categories:</p>
+                     </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-[#2a2a2a] mb-5">Tour operators / Travel Planner across the India</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">After the inception of online hotel booking portals; tour operators started losing business due to lack of visibility and competitive pricing. If you are one of them, we have an exciting opportunity for you to grow with TheIndia.</p>
+                     </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-[#2a2a2a] mb-5">How TheIndia can help tour operators?</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">TheIndia is one of the fastest growing travel community portal featuring unique places to explore around India. Here we will provide separate page to each tour operators to showcase their:</p>
+                        <ul class="list-disc ps-4">
+                           <li>Multiple packages</li>
+                           <li>Information about tour operators</li>
+                           <li>User reviews & Ratings</li>
+                           <li>Inquiry management from TheIndia backend</li>
+                           <li>Email alerts on each inquiry and many more features.</li>
+                        </ul>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">Here TheIndia recommendation engine will recommend the most relevant tour operators on places & travelogue page. This will increase the chances to receive inquires from the people looking for packages to explore those places.</p>
+                     </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-[#2a2a2a] mb-5">Example of Tour Operator Listing at TheIndia</h3>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">Visit our <a href="https://www.theindia.co.in/touroperators/" class="text-orange underline decoration-orange">tour operator</a> section to see the featured tour operators listed at TheIndia. You can also see the separate page allocated SreesTours featuring their different packages of Kerala.</p>
+                        <p class="sm:text-base text-sm font-medium text-[#525252] text-justify leading-6">Sign up now and start growing your business with TheIndia</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <footer class="bg-black lg:py-[60px] py-[30px] pt-[50px]">
+         <div class="lg:custom-container container">
+            <div class="grid grid-cols-12 gap-4">
+               <div class="lg:col-span-7 col-span-12 lg:text-left text-center">
+                  <h3 class="font-museo font-bold lg:text-4xl text-3xl text-white mb-3">Sign Up for out news letter</h3>
+                  <p class="font-museo text-base text-white font-normal max-w-[600px] lg:ms-0 mx-auto">Stay up to date with the news letter and announcement for the upcoming events and information</p>
+               </div>
+               <div class="lg:col-span-5 col-span-12">
+                  <div class="flex lg:justify-end justify-center">
+                     <input type="email" class="w-full max-w-[280px] me-3 px-6 rounded-full" placeholder="Enter your email">
+                     <button type="submit" class="text-lg text-white bg-[#D93131] rounded-full py-2 px-4">Subscribe</button>
+                  </div>
+               </div>
+            </div>
+            <div class="grid grid-cols-12 gap-4 my-16">
+               <div class="lg:col-span-6 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <p class="text-base text-white max-w-[300px]">Stay up to date with the news letter and announcement for the upcoming  events and information</p>
+               </div>
+               <div class="lg:col-span-2 sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Business</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Career</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">DMCA</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3">Explore</h4>
+                  <ul>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Terms Of Use</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Privacy Policy</a>
+                     </li>
+                     <li class="text-base text-white font-normal">
+                        <a href="#" class="">Help </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="lg:col-span-2  sm:col-span-4 col-span-12">
+                  <h4 class="text-white xl:text-2xl text-xl font-bold mb-3 sm:text-right">Contact Us</h4>
+                  <p class="text-base text-white font-normal sm:text-right"><a href="#">+91 00000000000</a></p>
+                  <ul class="flex items-center sm:justify-end justify-start mt-5">
+                     <li class="px-1"><a href="#"><img src="images/Facebook.png" alt="facebook"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Twitter.png" alt="twitter"></a></li>
+                     <li class="px-1"><a href="#"><img src="images/Pinterest.png" alt="Pintrest"></a></li>
+                     <li class="px-1 pe-0"><a href="#"><img src="images/Instagram.png" alt="instagram"></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div>
+               <p class="font-museo text-center text-white md:text-base text-sm font-normal">The India ©2023. | Proudly made with in India</p>
+            </div>
+         </div>
+      </footer>
+      <script src="jquery.min.js"></script>
+      <script src="owl.carousel.min.js"></script>
+      <script>
+         $(document).ready(function(){
+            $('button#mobile-menu-btn').click(function(){
+               $('body').find('.mobile-menu').toggleClass('hidden');
+            });
+         });
+         const accordionHeaders = document.querySelectorAll('.accordion-header');
+         accordionHeaders.forEach(header => {
+         header.addEventListener('click', () => {
+            // Toggle the hidden class on the accordion content
+            const content = header.nextElementSibling;
+            header.classList.toggle('active');
+            content.classList.toggle('hidden');
+         });
+         });
+      </script>
+   </body>
+</html>
